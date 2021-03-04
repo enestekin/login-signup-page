@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="container">
+      <div class="header">
+        <div id="login" class="header__content-login">Giriş Yap</div>
+        <div id="signup" class="header__content-signup">Üye Ol</div>
+      </div>
+      <form class="login__form" action="" method="GET">
+        <div id="email__container">
+          <input 
+          id="email-input"
+          class="inputs invalid ll" 
+          type="email"
+          name='email' 
+          placeholder="E-posta adresi" 
+        />
+        </div>
+        <div id="password__container" class="password__container">
+          <input 
+            id="password-input"
+            class="inputs invalid ll" 
+            type="password"
+            name='password' 
+            placeholder="Şifre" 
+          /> 
+          <i id="visibility" class="fas fa-eye"></i>
+        </div>
+        <button type="submit" class="button1">Giriş Yap</button>
+        <a class="refresh__password" href="/">Şifremi Unuttum</a>
+      </form>
+
+      <form class="signup__form" action="">
+        <div class="form__header">
+          E-posta adresi ile üye ol
+          <div><hr></div>
+        </div>
+        <div class="input__field">
+          <div class="name__container">
+            <input
+            id="input-name" 
+            class="inputss fNameError invalid tt" 
+            type="text"
+            name='fname' 
+            placeholder="Ad"
+          />
+          </div>
+          <div class="lastname__container">
+            <input 
+            id="input-lastname"
+            class="inputss lNameError invalid tt" 
+            type="text"
+            name='lname' 
+            placeholder="Soyad"
+          />
+          </div>
+        </div>
+        <div class="email__container--signup">
+          <input 
+            id="email-input-signup"
+            class="inputs invalid tt" 
+            type="email"
+            name='email'
+            placeholder="E-posta adresi"
+          />
+        </div>
+        <div class="password__container pwdOne">
+          <input 
+            id="password1"
+            class="inputs invalid tt" 
+            type="password"
+            name="password" 
+            placeholder="Şifre"
+          /> 
+          <i id="visibility1" class="fas fa-eye"></i>
+        </div>
+        <div class="password__container warning">
+          <input 
+            id="password2"
+            class="inputs invalid tt" 
+            type="password"
+            name="password" 
+            placeholder="Şifre Onayı"
+          /> 
+          <i id="visibility2" class="fas fa-eye"></i>
+        </div>
+        <div class="input__footer">
+          <input style="margin-right: 1rem;" id="checkbox" class="invalid" type="checkbox" />
+          <p class="input__footer-deal" >Önemli kampanyalardan haberdar olmak için <strong>Rıza Kapsamında</strong>
+            elektronik ileti almak istiyorum.</p>
+        </div>
+        <button type="submit" class="button2" >Üye Ol</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
